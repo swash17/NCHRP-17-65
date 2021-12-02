@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Example Problem 1: Level, Straight, Passing Constrained Segment | NCHRP Project 08-135 Guidebook Example</title>
+  <meta name="description" content="This is a simple example of a book written with the Bookdown package. Output formats include Gitbook/HTML, ePub, and PDF." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Example Problem 1: Level, Straight, Passing Constrained Segment | NCHRP Project 08-135 Guidebook Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a simple example of a book written with the Bookdown package. Output formats include Gitbook/HTML, ePub, and PDF." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Example Problem 1: Level, Straight, Passing Constrained Segment | NCHRP Project 08-135 Guidebook Example" />
+  
+  <meta name="twitter:description" content="This is a simple example of a book written with the Bookdown package. Output formats include Gitbook/HTML, ePub, and PDF." />
+  
+
+<meta name="author" content="Washburn, Al-kaisy, Moreno, Schroeder, Barrios" />
+
+
+<meta name="date" content="2021-12-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="example-problem-2-passing-constrained-segment-with-horizontal-curves.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#research-team"><i class="fa fa-check"></i><b>1.1</b> Research Team</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#panel-staff-members"><i class="fa fa-check"></i><b>1.2</b> Panel / Staff Members</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="3" data-path="example-problem-1-level-straight-passing-constrained-segment.html"><a href="example-problem-1-level-straight-passing-constrained-segment.html"><i class="fa fa-check"></i><b>3</b> Example Problem 1: Level, Straight, Passing Constrained Segment</a></li>
+<li class="chapter" data-level="4" data-path="example-problem-2-passing-constrained-segment-with-horizontal-curves.html"><a href="example-problem-2-passing-constrained-segment-with-horizontal-curves.html"><i class="fa fa-check"></i><b>4</b> Example Problem 2: Passing Constrained Segment with Horizontal Curves</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">NCHRP Project 08-135 Guidebook Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="example-problem-1-level-straight-passing-constrained-segment" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Example Problem 1: Level, Straight, Passing Constrained Segment</h1>
+<p>This example problem illustrates the computation of the LOS in a single direction on a straight, 0.75-mi-long Passing Constrained segment in level terrain. This example problem follows the flowchart of analysis steps outlined in Exhibit 15-9.</p>
+<p><strong>The Facts</strong></p>
+<p>The segment has the following known characteristics:</p>
+<ul>
+<li><p>Segment length = 3,960 ft (0.75 mi);</p></li>
+<li><p>Segment type = Passing Constrained;</p></li>
+<li><p>No upstream passing lanes;</p></li>
+<li><p>Vehicle count in the analysis direction = 752 veh/h;</p></li>
+<li><p><em>PHF</em> = 0.94;</p></li>
+<li><p>Posted speed limit: 50 mi/h;</p></li>
+<li><p>Percent heavy vehicles (%HV) = 5%;</p></li>
+<li><p>Percent grade = 0%;</p></li>
+<li><p>Horizontal curvature = none;</p></li>
+<li><p>Lane width = 12 ft;</p></li>
+<li><p>Shoulder width = 6 ft; and</p></li>
+<li><p>Access points = 0.</p></li>
+</ul>
+<p><strong>Objective</strong></p>
+<p>Estimate the LOS in the subject direction on the two-lane highway segment as described.</p>
+<p><strong>Step 1: Identify Facility Study Boundaries and Segmentation</strong></p>
+<p>The limits of the segment were identified following the guidance given in Step 1 on page 15-15. The characteristics of this segment were determined by examination to be essentially homogenous. These characteristics included the ability to pass, lane geometry, grades, lane and shoulder widths, posted speed limit, traffic demands, adjacent land uses, and driveways.</p>
+<p>A field examination of the segment determined that it met the definition of a Passing Constrained segment, being a segment in which “passing in the oncoming lane is either prohibited or is effectively negligible due to geometric or sight distance limitations.”</p>
+<p><strong>Step 2: Determine Demand Flow Rates, Capacity, and <em>d/c</em> Ratio</strong></p>
+<p>In this step, the hourly demand volume at the upstream entrance of the directional segment being evaluated is converted to a peak 15-min flow rate by applying the peak hour factor (PHF) using Equation 15-1:</p>
+<p><span class="math display">\[v_{d} = \frac{V_{d}}{\text{PHF}} = \frac{752}{0.94} = 800\ \text{veh/h}\]</span></p>
+<p>The capacity of a Passing Constrained segment is 1,700 veh/h, as stated in the description of Step 2 on page 15-18. The demand flow rate is less than capacity; therefore the calculation process proceeds to Step 3.Note that it is only necessary to compute the actual opposing flow rate
+for Passing Zone segments.</p>
+<p><strong>Step 3: Determine Vertical Alignment Classification</strong></p>
+<p>The segment is assigned a vertical alignment classification of 1, based on Exhibit 15-11 for a level (0% grade), 0.75-mi-long segment. From Exhibit 15-10, the segment length of 0.75 mi is between the minimum
+(0.25 mi) and maximum (3.0 mi) lengths for a Passing Constrained segment of vertical class 1, and therefore no adjustment is needed to the segment length.</p>
+<p><strong>Step 4: Determine the Free-Flow Speed</strong></p>
+<p>As stated on page 15-18, direct field measurement of <em>FFS</em> is preferred. In this case it is not feasible to measure the <em>FFS</em>, so it will be estimated using the procedure given in Step 4.</p>
+<p>Because this is a Passing Constrained segment, the opposing flow rate <em>v<sub>o</sub></em> is set at 1,500 veh/h in Equation 15-4 for the purposes of computing <em>FFS</em>, regardless of the actual opposing flow rate. First,
+the base free-flow speed <em>BFFS</em> is estimated using Equation 15-2. Next, Equation 15-4 through Equation 15-6 are used to determine factors relating to lane and shoulder width, access-point density, and heavy-vehicle percentage, which are used in the estimation of <em>FFS</em>. Finally, the <em>FFS</em> is estimated by Equation 15-3.</p>
+<p><span class="math display">\[BFFS = 1.14 \times S_{\text{pl}} = 1.14 \times 50 = 57.0\ \text{mi/h}\]</span></p>
+<p><span class="math display">\[f_{LS} = 0.6 \times (12 - LW) + 0.7 \times (6 - SW)\]</span></p>
+<p><span class="math display">\[f_{LS} = 0.6 \times (12 - 12) + 0.7 \times (6 - 6) = 0\]</span></p>
+<p><span class="math display">\[f_{A} = \text{min}\left( \frac{ {APD}}{4},10 \right) = \text{min}\left( \frac{0}{4},10 \right) = 0\]</span></p>
+<p><span class="math display">\[a = \text{max}\lbrack 0.0333,\ 0\rbrack = 0.0333\]</span></p>
+<p><span class="math display">\[FFS = BFFS - a(HV\%)\]</span></p>
+<p><span class="math display">\[FFS = 57.0 - (0.0333)(5) - 0 - 0 = 56.83 \text{ mi/h}\]</span></p>
+<p>There are no geometry-related <em>FFS</em> adjustments for 12-ft lanes and 6-ft shoulders. There are also no adjustments for access points (driveways or streets), because this segment has no access points.</p>
+<p><strong>Step 5: Estimate the Average Speed</strong></p>
+<p>Because the demand flow rate in the subject direction is greater than 100 veh/h, the equations given in Step 5 are used to estimate the average speed.</p>
+<p><strong>Step 5a: Calculate the Slope Coefficient</strong></p>
+<p>The slope coefficient <em>m</em> determines how rapidly the average speed is estimated to decrease as a function of the entering flow rate. It is computed as a function of six coefficients <em>b</em><sub>0</sub> to <em>b</em><sub>5</sub>, which are obtained from Exhibit 15-13 for a Passing Constrained segment. For a segment of vertical class 1, these coefficients are 0.0558, 0.0542, 0.3278, 0.1029, 0, and 0, respectively. Equation 15-8 is then used to determine the slope coefficient.</p>
+<p><span class="math display">\[m = \text{max}\left\lbrack b_{5},b_{0} + b_{1} \times FFS + b_{2} \times \sqrt{\frac{v_{o}}{1,000}} + \text{max}\left( 0,b_{3} \right) \times \sqrt{L} + \text{max}\left( 0,b_{4} \right) \times \sqrt{HV\%} \right\rbrack\]</span></p>
+<p><span class="math display">\[m = \text{max}\left\lbrack 0,0.0558 + 0.0542 \times 56.83 + 0.3278 \times \sqrt{\frac{1,500}{1,000}} + \text{max}(0,\ 0.1029) \\ \times \sqrt{0.75} + \text{max}(0,\ 0) \times \sqrt{5}\right\rbrack\]</span></p>
+<p><span class="math display">\[m = 3.626\]</span></p>
+<p><strong>Step 5b: Calculate the Power Coefficient</strong></p>
+<p>The power coefficient <em>p</em> is used to estimate how fast the average speed decreases at higher flow rates. The equation uses nine coefficients <em>f</em><sub>0</sub> to <em>f</em><sub>8</sub>, which are obtained from Exhibit
+15-19 for a Passing Constrained segment. For a segment of vertical class 1, all of these coefficients take on values of 0, except for <em>f</em><sub>0</sub> (0.67576), <em>f</em><sub>3</sub> (0.12060), and <em>f</em><sub>4</sub> (−0.35919). Equation 15-11 is then used to determine the power coefficient.</p>
+<p><span class="math display">\[p = \text{max}\left\lbrack f_{8},f_{0} + f_{1} \times FFS + f_{2} \times L + f_{3} \times \frac{v_{o}}{1,000} + f_{4} \times \sqrt{\frac{v_{o}}{1,000}} \\ + f_{5} \times HV\% + f_{6} \times \sqrt{HV\%} + f_{7} \times (L \times HV\%) \right\rbrack\]</span></p>
+<p><span class="math display">\[p = \text{max}\left\lbrack 0,0.67576 + 0 \times 56.83 + 0 \times 0.75 + 0.12060 \times \frac{1,500}{1,000} - 0.35919 \times \sqrt{\frac{1,500}{1,000}} \\ + 0 \times 5 + 0 \times \sqrt{5} + 0 \times (0.75 \times 5) \right\rbrack\]</span></p>
+<p><span class="math display">\[p = 0.41676\]</span></p>
+<p><strong>Step 5c: Calculate Average Speed for the Segment</strong></p>
+<p>The average speed for the given entry flow rate is computed in Step 5-3 using Equation 15-7. The previously computed flow rate <em>v<sub>d</sub></em>, slope coefficient <em>m</em>, and power coefficient <em>p</em> are used in this equation.</p>
+<p><span class="math display">\[S = FFS - {m\left( \frac{v_{d}}{1,000} - 0.1 \right)}^{p}\]</span></p>
+<p><span class="math display">\[S = 56.83 - {3.626\left( \frac{800}{1,000} - 0.1 \right)}^{0.41676}\]</span></p>
+<p><span class="math display">\[S = 53.7\ \text{mi/h}\]</span></p>
+<p><strong>Step 5d: Adjust Speed for Horizontal Alignment</strong></p>
+<p>Because this is a straight segment, no adjustment to the speed estimate is required for horizontal alignment.</p>
+<p><strong>Assessment of Speed Results</strong></p>
+<p>The average speed at a directional flow rate of 800 veh/h is estimated to be approximately 3 mi/h (about 5%) lower than the <em>FFS</em>, but about 4 mi/h (about 7%) higher than the posted speed limit.</p>
+<p><strong>Step 6: Estimate the Percent Followers</strong></p>
+<p>The service measure <em>percent followers</em> is estimated in Step 6 for the given flow rate <em>v<sub>d</sub></em>. under the prevailing geometric conditions and percent heavy vehicles. First, the percent followers at
+100% of capacity is estimated. Next, the percent followers at 25% of capacity is estimated. Then, the slope and power coefficients for an exponential curve fitting those two points (percent followers at 25% and
+100% capacity) are estimated. Finally, the fitted curve is used to estimate the percent followers for the given flow rate.</p>
+<p><strong>Step 6a: Compute Percent Followers at Capacity</strong></p>
+<p>Percent followers at capacity is calculated using Equation 15-18, applying eight parameters <em>b</em><sub>0</sub> to <em>b</em><sub>7</sub> obtained from Exhibit 15-24.</p>
+<p><span class="math inline">\({PF}_{cap} = b_{0} + b_{1}(L) + b_{2}\left(\sqrt{L} \right) + b_{3}\left({FFS} \right) \\+ b_{4}\left( \sqrt{FFS} \right) + b_{5}(HV\%) + \ b_{6}\left( FFS \times \frac{v_{o}}{1,000} \right) + b_{7}\left( \sqrt{\frac{v_{0}}{1,000}} \right)\)</span></p>
+<p><span class="math inline">\({PF}_{cap} = 37.68080 + 3.05089(0.75) - 7.90866\left( \sqrt{0.75} \right) - 0.94321(56.83) \\ + 13.64266\left( \sqrt{56.83} \right) - 0.00050(5) - 0.05500\left(56.83 \times \frac{1,500}{1,000} \right) + 7.1376\left(\sqrt{\frac{1,500}{1,000}} \right)\)</span></p>
+<p><span class="math display">\[{PF}_{cap} = 86.41\%\]</span></p>
+<p><strong>Step 6b: Compute Percent Followers at 25% Capacity</strong></p>
+<p>Percent followers at 25 percent of capacity is calculated using Equation 15-20, applying eight parameters <em>c</em><sub>0</sub> to <em>c</em><sub>7</sub> obtained from Exhibit 15-26.</p>
+<p><span class="math display">\[{PF}_{25cap} = c_{0} + c_{1}(L) + c_{2}\left( \sqrt{L} \right) + c_{3}\left({FFS} \right) + c_{4}\left( \sqrt{\text{FFS}} \right) + c_{5}(HV\%) + c_{6}\left( FFS \times \frac{v_{o}}{1,000} \right) \\ + c_{7}\left( \sqrt{\frac{v_{0}}{1,000}} \right)\]</span></p>
+<p><span class="math display">\[{PF}_{25cap} = 18.01780 + 10.00000(0.75) - 21.60000\left( \sqrt{0.75} \right) - 0.97853(56.83) \\ + 12.05214\left( \sqrt{56.83} \right) - 0.00750(5) - 0.06700\left( 56.83 \times \frac{1,500}{1,000} \right) + 11.6041\left( \sqrt{\frac{1,500}{1,000}} \right)\]</span></p>
+<p><span class="math display">\[{PF}_{25cap} = 50.52\%\]</span></p>
+<p><strong>Step 6c: Calculate the Slope Coefficient</strong></p>
+<p>Equation 15-22 is used to compute the slope coefficient <em>m</em> for an exponential curve fitted between percent following at capacity and percent following at 25% capacity. It employs two parameters <em>d</em><sub>1</sub> and <em>d</em><sub>2</sub> obtained from Exhibit 15-28; the parameters for Passing Constrained segments are used.</p>
+<p><span class="math display">\[m = d_{1}\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{{PF}_{25cap}}{100} \right\rbrack}{0.25\left\lbrack \frac{{cap}}{1,000} \right\rbrack} \right) + d_{2}\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{{PF}_{\text{cap}}}{100} \right\rbrack}{\left\lbrack \frac{{cap}}{1,000} \right\rbrack} \right)\]</span></p>
+<p><span class="math display">\[m = - 0.29764\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{50.52}{100} \right\rbrack}{0.25\left\lbrack \frac{1,700}{1,000} \right\rbrack} \right) - 0.71917\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{86.41}{100} \right\rbrack}{\left\lbrack \frac{1,700}{1,000} \right\rbrack} \right)\]</span></p>
+<p><span class="math display">\[m = - 1.337\]</span></p>
+<p><strong>Step 6d: Calculate the Power Coefficient</strong></p>
+<p>Equation 15-23 is used to compute the power coefficient <em>p</em> for an exponential curve fitted between percent following at capacity and percent following at 25% capacity. It employs five parameters <em>e</em><sub>0</sub> through <em>e</em><sub>4</sub> obtained from Exhibit 15-29; the parameters for Passing Constrained segments are used.</p>
+<p><span class="math display">\[p = e_{0} + e_{1}\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{{PF}_{25cap}}{100} \right\rbrack}{0.25\left\lbrack \frac{cap}{1,000} \right\rbrack} \right) + e_{2}\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{{PF}_{{cap}}}{100} \right\rbrack}{\left\lbrack \frac{cap}{1,000} \right\rbrack} \right) + \ e_{3}\sqrt{\frac{0 - \text{ln}\left( 1 - \frac{{PF}_{25cap}}{100} \right)}{0.25\left\lbrack \frac{cap}{1,000} \right\rbrack}} \\ + e_{4}\sqrt{\frac{0 - \text{ln}\left( 1 - \frac{{PF}_{cap}}{100} \right)}{\left\lbrack \frac{{cap}}{1,000} \right\rbrack}}\]</span></p>
+<p><span class="math display">\[p = 0.81165 + 0.37920\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{50.52}{100} \right\rbrack}{0.25\left\lbrack \frac{1,700}{1,000} \right\rbrack} \right) - 0.49524\left( \frac{0 - \text{ln}\left\lbrack 1 - \frac{86.41}{100} \right\rbrack}{\left\lbrack \frac{1,700}{1,000} \right\rbrack} \right) \\ - 2.11289\sqrt{\frac{0 - \text{ln}\left( 1 - \frac{50.52}{100} \right)}{0.25\left\lbrack \frac{1,700}{1,000} \right\rbrack}} + 2.41146\sqrt{\frac{0 - \text{ln}\left( 1 - \frac{86.41}{100} \right)}{\left\lbrack \frac{1,700}{1,000} \right\rbrack}}\]</span></p>
+<p><span class="math display">\[p = 0.7524\]</span></p>
+<p><strong>Step 6e: Calculate Percent Followers</strong></p>
+<p>Equation 15-17 is used to compute percent followers <em>PF</em>.</p>
+<p><span class="math display">\[PF = 100 \times \left\lbrack 1 - e^{\left( m\  \times \left\{ \ \frac{v_{d}}{1,000} \right\}^{p} \right)} \right\rbrack\]</span></p>
+<p><span class="math display">\[PF = 100 \times \left\lbrack 1 - e^{\left( - 1.337\  \times \left\{ \ \frac{800}{1,000} \right\}^{0.7524} \right)} \right\rbrack\]</span></p>
+<p><span class="math display">\[PF = 67.7\%\]</span></p>
+<p><strong>Step 7: Calculate Additional Performance Measure Values for a Passing Lane Segment</strong></p>
+<p>This step is only applicable to passing lane segments. Therefore, Step 7 is skipped.</p>
+<p><strong>Step 8: Calculate Follower Density</strong></p>
+<p>Follower density <em>FD</em> is estimated using Equation 15-35.</p>
+<p><span class="math display">\[FD = \frac{\text{PF}}{100} \times \frac{v_{d}}{S} = \frac{67.7}{100} \times \frac{800}{53.7} = 10.1\ \text{followers/mi/ln}\]</span></p>
+<p><strong>Step 9: Determine Potential Adjustment to Follower Density</strong></p>
+<p>There is no passing lane upstream of the analysis segment. Therefore, no adjustment is needed to follower density and Step 9 is skipped.</p>
+<p><strong>Step 10: Determine LOS</strong></p>
+<p>The segment’s LOS is determined from Exhibit 15-6, using the column for a higher-speed highway (posted speed limit equal to or greater than 50 mi/h). With 10.1 followers/mi, the subject direction of travel on the segment operates at LOS D.</p>
+<p><strong>Discussion</strong></p>
+<p>The estimated FFS and average speed for a flow rate of 800 veh/h are both above the posted speed limit. This result is reasonable for a flat, straight segment in this volume range. However, the follower density
+produces LOS D operations. This flow rate is large enough to produce fairly high levels of platooning, but not so high as to cause significant reductions in speed. The combination of a moderately high flow rate and moderately high level of platooning will result in travelers perceiving a relatively poor level of service.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="example-problem-2-passing-constrained-segment-with-horizontal-curves.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-Example1.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Guidebook.pdf", "Guidebook.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
