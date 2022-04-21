@@ -1,9 +1,0 @@
-fig:Example2Image1
-preface
-research-team
-panel-staff-members
-intro
-example-problem-1
-level-straight-passing-constrained-segment
-example-problem-2
-passing-constrained-segment-with-horizontal-curves
